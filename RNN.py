@@ -53,7 +53,7 @@ rnn.compile( optimizer='rmsprop', loss='binary_crossentropy', metrics=['accuracy
 
 # model summary
 rnn.summary()
-plot_model(rnn, "Basic CNN Model.png", show_shapes = True)
+plot_model(rnn, "Basic RNN Model.png", show_shapes = True)
 
 # train model
 rnn.fit( X_train, y_train, epochs = 3, batch_size=128 )
